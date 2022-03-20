@@ -1,0 +1,57 @@
+A brief history
+
+A way to produce desired output for tasks like classification and regression.
+
+In general, there's supervised and unsupervised learning.
+
+Supervised learning is used when you have pre-established and labeled data that can be used for training.
+What each sensor measures is called a feature. A group of features makes up a feature set, represented as vectors/arrays.
+The values of a feature set can be referred to as a sample.
+
+Samples are fed into neural network models to train them to fit desired outputs, or to predict them during the inference phase.
+
+Normal or Failure labels are classifications or labels. You may also see these referred to as targets or ground truths.
+They are known to be true and correct.
+
+There's also unsupervised learning. Where the machine finds structure in data without knowing the labels ahead of time.
+
+The NNFS book focuses on classification and regression with neural networks.
+
+
+
+What is a neural network?
+There are neurons, activations, lots of interconnectivity.
+
+A single neuron by itself is relatively useless, but when combined with hundreds or thousands of other neurons, it
+produces relationships and results that frequently outperform any other machine learning methods.
+
+Neural Networks are considered "black boxes" in that we often have no idea why they reach the conclusions they do. We do,
+however, understand how they do this, though.
+
+Each neuron layer is connected to every neuron of the next layer. Which means that its output value becomes an input for
+the next neurons. Each connection between neurons has a weight associated with it, which is a trainable factor of how much of this input to use.
+This weight gets multiplied by the input value.
+Once all of the inputs * weights flow into the neuron, they are summed and a bias (another trainable parameter) is added.
+The purpose of this bias is to offset the output positively or negatively.
+
+The concept of weights and biases can be thought of as knobs that we can tune to fit our model to data.
+
+Output = Weight*Input + Bias
+
+Not unlike y = mx + b
+
+
+
+Step functions would say if the output of the neuron is greater than 0, it actually outputs a "1", otherwise it would
+output a "0".
+These /can/ be used, but we tend to use more informative activation functions.
+
+
+
+Along with neuron layers, there are input and output layers.
+Input represents your actual input data. The output layer is what the network returns.
+
+
+We tend to use "in-sample" data to train a model, but use "out-of-sample" data to validate an algorithm.
+For example, if our dataset has 100,000 samples of data and labels, you immediately set 10,000 aside to be your validation
+data. This is done to prevent overfitting, or the model simply memorizing the training data. This is called generalization.

@@ -1,0 +1,49 @@
+Weights seem to be between -1 and 1.
+
+In the "A layer of neurons code" we have three sets of weights and biases. Each Neuron is connected to the same inputs.
+The difference is in the separate weights and biases that each neuron applies to the input.
+
+This is called a fully connected neural network.
+
+
+Tensors, Arrays and Vectors.
+
+Tensors are closely related to arrays.
+
+A list of lists are arrays if each list along each dimension is equally long. This is called: Homologous
+
+A matrix is a rectangular array. It is two-dimensional.
+
+Arrays can be more than two-dimensional. So all matrices are arrays, but not all arrays are matrices.
+
+A tensor object is an object that can be represented as an array.
+
+A linear array, also called a 1-dimensional array and can be represented by a list in python. This is also known as
+a vector in math.
+
+
+Dot Product and Vector Addition
+A dot product of two vectors (a list of numbers) is a sum of products (multiplication) of items in the lists.
+
+This is way easier to show than explain:
+
+a = [1, 2, 3]
+b = [2, 3, 4]
+dot_product = a[0]*b[0] + a[1]*b[1] + a[2]*b[2]
+>>> 20
+
+Check out how this all works in the Dot Products code.
+
+Samples == feature set instances == observations
+
+The matrix product is an operation where we have 2 matrices and we are performing dot products of all combinations of
+rows from the first matrix and the columns of the second matrix.
+https://nnfs.io/jei
+
+Transposition modifies a matrix in a way that its rows become columns and columns become rows.
+
+NumPy does not have a dedicated method to perform a matrix product. Dot and Matrix products are both implemented
+in a single method: np.dot().
+
+So we are transposing the weights, the book says "it's more useful to have a result consisting of a list of layer
+outputs per sample than a list of neurons and their outputs sample-wise."

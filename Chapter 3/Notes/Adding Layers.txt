@@ -1,0 +1,17 @@
+Neural Networks become "deep" when they have 2 or more hidden layers.
+Despite the name, you will often use the values in these layers to diagnose issues or improve your neural network.
+
+Each weight set is associated with its distinct neuron. So if we have 3 weight sets, we have 3 neurons
+
+To add another layer, we must make sure that the expected input to that layer matches the previous layers output.
+Each new layer can have as many weight sets as we want it to have, (as this defines how many neurons we want in the
+layer), but the number of distinct weights in each set must match the number of neurons or inputs from the previous
+layer.
+
+Linear data can be fit with or represented by a straight line.
+
+Non-linear data cannot be represented well by a straight line.
+
+Linear data are very easily approximated by far simpler machine learning models than neural networks.
+What other machine learning algorithms cannot approximate so easily are non-linear datasets.
+
